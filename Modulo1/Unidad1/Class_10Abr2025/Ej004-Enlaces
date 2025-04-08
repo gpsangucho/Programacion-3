@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ej004-Enlaces </title>
+    </head>
+    <body>
+
+        <h1>        Enlaces </h1>
+
+        <a href="https://www.ute.edu.ec"> Ir a UTE</a>
+        <br>
+        <a href="https://www.google.com" target="_blanck"> Ir a Google en la pestaña nueva </a>
+        <br>
+        <a href="https://www.yahoo.com" title="Yahoo"> Ir a Yahoo. Pase el mouse aqui para que vea el nombre </a>
+
+    </body>
+</html>

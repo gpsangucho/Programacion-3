@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Mi pagina </title>
+    </head>
+    <body>
+        <h1> HOLA: mi primera página HTML </h1>
+    </body>
+</html>

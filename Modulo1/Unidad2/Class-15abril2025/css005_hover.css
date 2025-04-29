@@ -1,0 +1,15 @@
+/*Movimientos con CSS: pasa el mouse y cambia de color*/
+.boton {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.35 ease-in-out;
+}
+
+.boton:hover {
+    background-color: darkorange;
+}
+

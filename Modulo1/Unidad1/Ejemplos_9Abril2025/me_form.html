@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Mi Formulario </title>
+    </head>
+    <body>
+    <div align="center">
+        <header>
+            <h1> Calzado July</h1>
+            <p>¡La comodidad a tu pies!</p>
+
+            <nav class="fondos2">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Quienes somos</a>
+                <a href="#contacto">Contactanos</a>
+                <a href="#registrate">Registrate</a>
+            </nav>
+        </header>
+    </div>
+    <div align="center">
+        <br>
+        <h2><strong><font color="red">Crea tu cuenta</font></strong></h2>
+    </div>
+    <div>
+       <form>
+            <table align="center" border="1">
+                
+                <tr>
+                <td>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="nombre"> Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" placeholder="nombre">
+                        </td> 
+                        <td> 
+                            <label for="apellido"> Apellido: </label>
+                            <input type="text" id="apellido" name="apellido" placeholder="apellido">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="genero"> Género: </label>
+                            <input type="radio" id="masculino" name="masculino"> Masculino
+                            <input type="radio" id="femenino" name="femenino"> Femenino
+                        </td>
+                        <td> 
+                            <label for="edad"> Edad: </label>
+                            <input type="number" id="edad" name="edad" min="0" max="99" step="1">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fecha">Fecha de nacimiento: </label>
+                            <input type="datetime-local" name="datetime" id="datetime" />
+                        </td>
+                        <td>
+                            <label for="price">Cuota: </label>
+                            <input type="range" name="price" id="price" min="5" max="500"step="10"value="258" />
+                            <output class="price-output" for="price"></output>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="pais">País: </label>
+                            <select type="text" id="país" name="país">
+                                <option value="ec">Ecuador</option>
+                                <option value="ve">Venezuela</option>
+                                <option value="br">Brazil</option>
+                                <option value="co">Colombia</option>
+                                <option value="ch">Chile</option>
+                        </td>
+                        <td>
+                            <label for="provincia">Provincia: </label>
+                            <select type="text" id="provincia" name="provincia">
+                                <option value="gy">Guayas</option>
+                                <option value="pc">Pichincha</option>
+                                <option value="lj">Loja</option>
+                                <option value="cu">Cuenca</option>
+                                <option value="ib">Ibarra</option>
+                                <option value="mn">Manabí</option>
+                                <option value="es">Esmeraldas</option>
+                                <option value="se">Santa Elena</option>
+                                <option value="eo">El Oro</option>
+                                <option value="co">Cotopaxi</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefono">Teléfono: </label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="02-5007589">
+                        </td>
+                        <td>
+                            <label for="correo">Correo: </label>
+                            <input type="email" id="correo" name="correo" placeholder="email@midominio.com" multiple>
+                        </td>
+
+                </table>    
+                <br>
+                <table border="1" cellspacing="1">
+                    <tr>
+                        <td>
+                            <label for="user">Usuario: </label>
+                            <input type="text" id="user" name="user" placeholder="User" maxlength="10">
+                        </td>
+                        <td>
+                            <label for="pass">Contraseña: </label>
+                            <input type="password" id="pass" name="pass" placeholder="xxxxxx" maxlength="10">
+                        </td> 
+                    </tr>
+                </table> 
+                </td>  
+                </tr>        
+            </table>
+       </form> 
+    </div>
+    </body>
+</html>

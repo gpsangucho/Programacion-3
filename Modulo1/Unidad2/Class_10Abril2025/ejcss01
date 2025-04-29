@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Tablas </title>
+    </head>
+    <body>
+        <h1> ESTILO INLINE</h1>
+
+        <p style="color:red"> 
+            "La mejor forma de pisar firme es con actitud"
+        </p>
+
+    </body>
+</html>

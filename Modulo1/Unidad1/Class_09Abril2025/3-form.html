@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Mi Formulario </title>
+    </head>
+    <body>
+        <h1> FORMULARIO </h1>
+        <form action="https://www.google.com" method="GET">
+            <input type="text">
+            <input type="text">
+            <button type="sumit">Enviar</button>
+        </form>
+
+        <h1> FORMULARIO: con una tabla</h1>
+        <form action="https://www.google.com" method="GET">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre"> Nombre </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellido"> Apellido </label>
+                        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nombre"> Paìs </label>
+                        <select type="text" id="país" name="país">
+                            <option value="ec">Ecuador</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="br">Brazil</option>
+                            <option value="co">Colombia</option>
+                            <option value="ch">Chile</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nombre"> Provincia </label>
+                        <select type="text" id="provincia" name="provincia">
+                            <option value="pic">Pichincha</option>
+                            <option value="gye">Guayas</option>
+                            <option value="oro">El Oro</option>
+                            <option value="cot">Cotopaxi</option>
+                            <option value="lja">Loja</option>
+                    </td>
+                </tr>
+            </table>
+            <button type="sumit">Enviar</button>
+        </form>
+
+
+        <h1> FORMULARIO: con una tabla pero con mas columnas</h1>
+        <form action="https://www.google.com" method="GET">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre"> Nombre </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="nombre">
+                    </td>
+
+                    <td>
+                        <label for="apellido"> Apellido </label>
+                        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nombre"> Paìs </label>
+                        <select type="text" id="país" name="país">
+                            <option value="ec">Ecuador</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="br">Brazil</option>
+                            <option value="co">Colombia</option>
+                            <option value="ch">Chile</option>
+                    </td>
+
+                    <td>
+                        <label for="nombre"> Provincia </label>
+                        <select type="text" id="provincia" name="provincia">
+                            <option value="pic">Pichincha</option>
+                            <option value="gye">Guayas</option>
+                            <option value="oro">El Oro</option>
+                            <option value="cot">Cotopaxi</option>
+                            <option value="lja">Loja</option>
+                    </td>
+                </tr>
+            </table>
+            <button type="sumit">Enviar</button>
+        </form>
+
+
+
+
+        <h1> FORMULARIO: con una tabla pero con mas columnas pero invertido</h1>
+        <form action="https://www.google.com" method="GET">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="nombre"> Nombre </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ponga el nombre">
+                    </td>
+                    <td>
+                        <label for="nombre"> Paìs </label>
+                        <select type="text" id="país" name="país">
+                            <option value="ec">Ecuador</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="br">Brazil</option>
+                            <option value="co">Colombia</option>
+                            <option value="ch">Chile</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="apellido"> Apellido </label>
+                        <input type="text" id="apellido" name="apellido" placeholder="ponga el apellido">
+                    </td>
+                    <td>
+                        <label for="nombre"> Provincia </label>
+                        <select type="text" id="provincia" name="provincia">
+                            <option value="pic">Pichincha</option>
+                            <option value="gye">Guayas</option>
+                            <option value="oro">El Oro</option>
+                            <option value="cot">Cotopaxi</option>
+                            <option value="lja">Loja</option>
+                    </td>
+                </tr>
+            </table>
+            <button type="sumit">Enviar</button>
+        </form>
+
+
+        <h1> FORMULARIO: con una tabla y mas controles</h1>
+        <form action="https://www.google.com" method="GET">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="nombre"> Nombre </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ponga el nombre">
+                    </td>
+                    <td>
+                        <label for="nombre"> Paìs </label>
+                        <select type="text" id="país" name="país">
+                            <option value="ec">Ecuador</option>
+                            <option value="ve">Venezuela</option>
+                            <option value="br">Brazil</option>
+                            <option value="co">Colombia</option>
+                            <option value="ch">Chile</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <!-- Marco Legend-->
+                        <legend> Ubicación</legend>
+
+                        <label for="apellido"> Direcciòn </label>
+                        <textarea id="dirección" name="apellido"  row="6" cols="40">
+                            Av. Occidental
+                        </textarea>
+                    </td>
+                    <td>
+                        <label for="nombre"> Colores </label>
+                        <select id="colores" name="colores" multiple>
+                            <option value="4">Azul</option>
+                            <option value="3">Verde</option>
+                            <option value="2">Marron</option>
+                            <option value="1">Negro</option>
+                    </td>
+
+
+                </tr>
+
+                     <!-- Otros controles-->
+
+                <tr>
+                    <td>
+                        <label for="navegadores"> Navegadores </label>
+                        <input type="range" id="a" name="a">
+
+                    </td>
+                    <td>
+                        <label for="nombre"> Edad </label>
+                        <input type="number" id="b" name="b">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="navegadores"> Navegadores </label>
+                        <datalist id="navegadores" name="navegadores">
+                            <option value="Internet explorer">
+                            <option value="Crome">
+                            <option value="Firefox">
+                            <option value="Brave">
+                        </datalist>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="navegadores"> Género </label>
+                        <input type="radio" id="femenino" name="femenino"> Femenino
+                        <input type="radio" id="masculino" name="masculino"> Masculino
+                    </td>
+                    <td>
+                        <label for="nombre"> Hobby </label>
+                        <input type="checkbox" id="cantar" name="cantar"> cartar
+                        <input type="checkbox" id="leer" name="leer"> Leer
+                        <input type="checkbox" id="hablar" name="hanlar"> hablar
+                    </td>
+                </tr>
+            </table>
+            <button type="sumit">Enviar</button>
+        </form>
+
+
+    </body>
+</html>

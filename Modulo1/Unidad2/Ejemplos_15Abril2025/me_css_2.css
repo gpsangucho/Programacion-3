@@ -1,0 +1,174 @@
+/*1.- FLEX*/
+.box {
+    display: inline-block;
+    width: 25%;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+  
+  #absolute {
+    background: rgb(94, 255, 0);
+    position: absolute;
+    top: 0px; /*Desplazamiento vertical: top botton*/
+    left: 0px; /*Desplazamiento horizontal: left, rigth*/
+  }
+  #relative {
+    background: rgb(255, 0, 85);
+    position: relative;
+    top: 0px; /*Desplazamiento vertical: top botton*/
+    left: 0px; /*Desplazamiento horizontal: left, rigth*/
+  }
+  #fixed{
+    background: rgb(0, 255, 242);
+    position: fixed;
+    top: 0px; /*Desplazamiento vertical: top botton*/
+    left: 0px; /*Desplazamiento horizontal: left, rigth*/
+  }
+  #sticky {
+    background: rgb(255, 0, 0);
+    position: sticky;
+    top: 0px; /*Desplazamiento vertical: top botton*/
+    left: 0px; /*Desplazamiento horizontal: left, rigth*/
+  }
+/*2.- BOX FLEX*/
+
+.contenedor {
+    display: flex; /*Define un contenedor flexible*/
+    
+    justify-content: space-between; /*center*/
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap ; /*Permite que los items contenidos ocupen varias líneas en lugar de una sola*/
+    
+    background-color: #a39f9f;
+    padding: 10px; /*Espacio entre el contenido y el contenedor*/
+    gap: 10px; /*Espacio entre contenidos*/
+}
+
+.items {
+    background: #4CAF50; /*Define el fondo*/
+    color: white; /*Define el color del texto */
+    padding: 25px; /*Espacio vertical entre letras*/
+    flex: 1 0 25%;
+    border-radius: 20px; /*Redondea las esquinas*/
+}
+/*3.- GRID*/
+.grid {
+    display: grid; /*Define un contenedor de cuadrícula*/
+
+    grid-template-columns: repeat(2,1fr);     /*2 columnas de igual ancho*/
+    grid-template-rows: auto auto; /*2 filas automaticas*/
+    
+    background-color: #eee;
+    padding: 20px;
+    gap: 15px;
+}
+
+.item {
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    border-radius: 6px;
+}
+/*4.- LAYOUT*/
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "logo header "
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+header {
+    grid-area:header;
+    background: #ff9800;
+}
+
+aside {
+    grid-area: aside;
+    background: #8bc34a;
+}
+
+main {
+    grid-area: main;
+    background: #03a9f4;
+}
+
+footer {
+    grid-area: footer;
+    background: #9c27b0;
+}
+
+logo {
+    grid-area: logo;
+    background: blue;
+}
+
+.layout>* {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+
+/*5.- HOVER*/
+.boton {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.35 ease-in-out;
+}
+.boton:hover {
+    background-color: darkorange;
+}
+/*6.- TRANSITION*/
+
+
+/*7.- RESPONSIVE*/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.menu div {
+    margin: 10px 0;
+}
+/*tablet: desde 601px hasta 1024px*/
+@media (min-width: 601px) and (max-width: 1024px){
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    .menu div {
+        margin: 0 10px;
+    }
+}
+
+/*desktop: mas de 1024px*/
+
+@media (min-width: 1025px){
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 40px;
+    }
+    .menu div {
+        margin: 0 20px;
+    }
+}

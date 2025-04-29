@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos.css" >
+        <title> Postal Calzado July's</title>
+    </head>
+    <body class="layout">
+        <header class="fondos1">
+                <img src="logoStore.png" atl="logo" with="250" height="150">
+                <span aling="left"> "El calzado que te enamora"</span>
+        </header>
+
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Quienes somos</a>
+            <a href="#contacto">Contactanos</a>
+            <a href="#registrate">Registrate</a>
+            <form action="https://www.google.com" method="GET">
+                <label> Buscar: </label>
+                <input type="text" id="buscar" name="buscar" placeholder="Ingrese su búsqueda">
+                <input type="image" src="buscar.jpg" width="25" height="15">
+            </form>
+        </nav>
+
+        <main>
+            <section class="contenedor-2">
+                <div class="items-2"> <h2 > Niños</h2> </div>
+                <div class="items-2"> <h2 > Caballeros</h2> </div>
+                <div class="items-2"> <h2> Damas</h2> </div>
+            </section>
+            <section class="contenedor">
+                    <div class="items">                        
+                        <img src="casual-niños.jpg" atl="logo" with="200" height="300">
+                    </div>
+                    <div class="items">                        
+                        <img src="casual-caballero.jpg" atl="logo" with="200" height="300">
+                    </div>
+                    <div class="items">                        
+                        <img src="casual-damas.jpg" atl="logo" with="320" height="300">
+                    </div>
+            </section>
+        </main>
+<!-----------------------------------------------------SLIDE----------------------------------->
+        <aside>             
+            <h3 class="texto1">    Categoría </h3>
+
+            <ol>
+                <li><a href="#casual">Casual</a></li>
+                <li><a href="#deportivo">Deportivos</a> </li>
+                <li><a href="#escolares">Escolares</a> </li>
+                <li><a href="#vestir">De vestir</a> </li>
+                <li><a href="#botas">Botas</a> </li>
+                <li><a href="#zandalias">Zandalias</a></li>
+            </ol>
+        </aside>
+        <!------------------------- PIE DE PAGINA --------------------------------------------->
+        <!-- Formularios de comentarios-->
+        <footer> 
+            <form action="https://www.google.com" method="GET">
+                <legend> " Sugerencias y comentarios" </legend>
+                <table class="fondo3" border="1" background="logoStore.png">
+                    <tr>
+                        <td>
+                            <label for="nombre"> Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="correo"> Correo: </label>
+                            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="navegadores"> Género </label>
+                            <input type="radio" id="femenino" name="femenino"> Femenino
+                            <input type="radio" id="masculino" name="masculino"> Masculino
+                        </td>
+                    </tr>        
+                    <tr>
+                        <td>
+                            <legend> Comentarios:</legend>
+                            <textarea id="comentarios" name="acomentarios"  row="10" cols="40">  </textarea>
+                        </td> 
+                    </tr>
+   
+                </table>
+                <button type="sumit">Enviar</button>
+            </form>
+            <p> ©Copyright 2018 aulaClic </p> 
+        </footer>
+
+        
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/*grid: organiza el espacio de una etiqueta <div> en filas y columnas*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);     /*2 columnas de igual ancho*/
+    grid-template-rows: auto auto; /*2 filas automaticas*/
+    gap: 15px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.item {
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    border-radius: 6px;
+}

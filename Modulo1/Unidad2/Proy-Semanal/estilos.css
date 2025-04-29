@@ -1,0 +1,185 @@
+/********************************************/
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.menu div {
+    margin: 10px 0;
+}
+/*tablet: desde 601px hasta 1024px*/
+@media (min-width: 601px) and (max-width: 1024px){
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    .menu div {
+        margin: 0 10px;
+    }
+}
+
+/*desktop: mas de 1024px*/
+
+@media (min-width: 1025px){
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 40px;
+    }
+    .menu div {
+        margin: 0 20px;
+    }
+}
+
+/********************************************/
+/*4.- LAYOUT*/
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header "
+        "nav nav"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+}
+
+header {
+    grid-area:header;
+    background: #ff9800;
+}
+
+aside {
+    grid-area: aside;
+    background: #c0e695;
+}
+
+main {
+    grid-area: main;
+    background: #98c4d8;
+}
+
+footer {
+    grid-area: footer;
+    background: #ebe0ec;
+}
+nav {
+    grid-area: nav;
+    background: #eac2f1;
+}
+
+logo {
+    grid-area: logo;
+    background: rgb(156, 156, 160);
+}
+
+/********************************************/
+.fondos1 {
+    color: black;
+    background-image: url('logoStore.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #54b875;
+    opacity: 0.9;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fondos2 {
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #83eec5;
+    opacity: 0.9;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.fondo3 {
+    color: rgb(180, 236, 74);
+    background-image: url('ojos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333;
+    opacity: 0.9;
+    padding: 4px;
+    text-align: right;
+    font-size: 20px;
+}
+
+/******************************************************************/
+/*Caja Flex*/
+.box {
+    display: inline-block;
+    width: 25%;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+
+  /**********************************************************************************************/
+
+  /*BOX FLEX*/
+
+.contenedor {
+    display: flex; /*Define un contenedor flexible*/
+    
+    justify-content: space-between; /*center*/
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap ; /*Permite que los items contenidos ocupen varias líneas en lugar de una sola*/
+    
+    background-color: #a39f9f;
+    padding: 5px; /*Espacio entre el contenido y el contenedor*/
+    gap: 5px; /*Espacio entre contenidos*/
+}
+
+.items {
+    background: white; /*Define el fondo*/
+    color: rgb(219, 201, 33); /*Define el color del texto */
+    padding: 25px; /*Espacio vertical entre letras*/
+    flex: 1 0 25%;
+    border-radius: 20px; /*Redondea las esquinas*/
+}
+
+.contenedor-2 {
+    display: flex; /*Define un contenedor flexible*/
+    
+    justify-content: center; /*center*/
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap ; /*Permite que los items contenidos ocupen varias líneas en lugar de una sola*/
+    
+    background-color: #a39f9f;
+    padding: 5px; /*Espacio entre el contenido y el contenedor*/
+    gap: 5px; /*Espacio entre contenidos*/
+}
+.items-2 {
+    background: #f1df8d; /*Define el fondo*/
+    color: rgb(40, 126, 206); /*Define el color del texto */
+    padding: 1%; /*Espacio vertical entre letras*/
+    flex: 1 0 25%;
+    border-radius: 20px; /*Redondea las esquinas*/
+    align-items: center;
+}
+/**********************************************************************************************/
+
+.texto1{
+    color: rgb(42, 81, 165);
+    font-size: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align:left;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 1ch;
+    word-spacing: 1px;
+    white-space: nowrap;
+}

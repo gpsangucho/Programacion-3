@@ -1,0 +1,28 @@
+Instalacion de typescript desde la consola de Code Studio
+
+PS Y:\GPS\Prog3\Class-TypeScript-6May2025>
+PS Y:\GPS\Prog3\Class-TypeScript-6May2025> npm install -g typescript
+
+added 1 package in 9s
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 11.3.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.3.0
+npm notice To update run: npm install -g npm@11.3.0
+npm notice
+PS Y:\GPS\Prog3\Class-TypeScript-6May2025> tsc --version
+Version 5.8.3
+PS Y:\GPS\Prog3\Class-TypeScript-6May2025> 
+
+
+====================================
+- primero generamos un archivo .ts
+- Diferencia con JavaScript es el tipado fuerte: La variable se debe declarar con el tipo de dato
+    let mensaje:string
+- para ejecutar el fichero .ts primero lo compilamos desde la consola con la línea:
+    PS Y:\GPS\Prog3\Class-TypeScript-6May2025> tsc .\hello-world.ts
+- La compilación con la línea anterior, genera un archivo .js
+- El TypeScript es estructado con el tipo de dato pero se puede usar un tipo de dato cuando nos se sabe que valor tomará la variable: Tipo ANY
+- Ejecutamos : PS Y:\GPS\Prog3\Class-TypeScript-6May2025> tsc .\ts01-tipos-datos.ts
+- cada vez que se compila el archivo, el fichero .js que se genera, se sobreescribe automaticamente
+- 
+

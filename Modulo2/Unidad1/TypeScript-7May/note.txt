@@ -1,0 +1,110 @@
+Pilares de la POO
+- ABSTRACCION.- conceptualmente se lo ve en la teoría. Cuando se a la práctica, TS y JS tienen clases absatractas. Es llevar objetos de la parte real a la programaciòn
+Tambien permite esconder los procesos de la parte real; es decir que desde fuera se ve un metodo o un atributo pero dentro de la clase abstracta hay mucho procesamiento. se apoya en la encapsulaciòn
+- ENCAPSULACION.- 
+- HERENCIA.- Permite heredar metodos
+- POLIMORFISMO.- Permite tomar las propiedades heredadas, incluir mas metodos o atributos en los hijos o eliminar ciertas propiedades
+
+CLASES:
+- es como el esqueleto o formato que vamos a tomar
+- Se declaran propiedades/variables y métodos
+- se configura un constructor donde se va a inicializar esta clase
+- El objeto se creará a partir de una clase y se llama a ese objeto "instancia"
+- Un objeto se instanacia a partir de la clase
+- 
+
+LINK
+- https://www.typescriptlang.org/docs/handbook/2/classes.html
+- https://www.w3schools.com/typescript/typescript_classes.php
+
+
+PS Y:\GPS\Prog3> tsc .\Class-TypeScript-7Mayo2025\poo01-estructura-clase.ts
+PS Y:\GPS\Prog3> node .\Class-TypeScript-7Mayo2025\poo01-estructura-clase.js
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Segundo archivo.
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> tsc .\poo02-modificadores.ts
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> node .\poo02-modificadores.js
+
+elementos modificadores de acceso a la variable:
+- Public: se tiene acceso desde fuera del objeto: objeto.atributo accede a atributo
+- Private: se tiene acceso solo dentro de la clase: objeto.atributo DARA error. Se accederá desde su metodo desde fuera => objeto.metodo()
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+HERENCIA:
+un objeto herea metodos con EXTENDs
+
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> tsc .\poo03-herencia.ts
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> node .\poo03-herencia.js
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+ABSTRACCION:
+La clase padre no se puede instanciar y se plantea los metodos que se definiran en cada hijo. cada hijo lo define segun su necesidad
+
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> tsc .\poo05-abstraccion.ts
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025> node .\poo05-abstraccion.js
+
+-----------------------------------------------------------
+cREACION DE BDD EN LA NUBE:
+https://neon.tech/
+gpsangucho@gmail.com/ Gatito
+
+creamos un proyecto y una BDD
+Abrimos pgadmin y hacemos el registro de la conexion.
+
+Usar: postgresql://blog_owner:npg_l6JirebKsB7D@ep-ancient-forest-a4vpegps-pooler.us-east-1.aws.neon.tech/blog?sslmode=require
+----------------------------------------
+Manual Backend Blob en NestJs 1/7: 
+
+https://francisco-higuera.netlify.app/
+blog en NJS
+copiamos y ejecutamos en la terminal. npm install -g @nestjs/cli
+creamos el proyecto poniendo el nombre del proyecto: nest new blog-backend
+Dir
+Abrir la carpeta que se creo y se observará la estructura
+-scr: arhcivos que se configurara
+- test: para pruebas primarias
+- package-lock.jason: hay los script para .... y las librerias asociadas a la app
+- 
+--------------------en la parte de scr
+- 
+- Abrir la carpeta creada e instalar:
+
+npm install @nestjs/typeorm typeorm pg
+npm install @nestjs/jwt @nestjs/passport passport passport-jwt bcrypt class-validator class-transformer
+npm install @nestjs/config
+npm install --save-dev @types/bcrypt
+
+- craer en la raiz un archivo .env y colocar las variables de entorno
+
+DB_HOST=localhost (de NEON)
+DB_PORT=5432
+DB_USER=postgres (de NEON)
+DB_PASS=mypassword (de NEON)
+DB_NAME=blogdb (de NEON)
+JWT_SECRET=supersecret
+JWT_EXPIRES_IN=3600s
+
+postgresql://blog_owner:npg_l6JirebKsB7D@ep-ancient-forest-a4vpegps-pooler.us-east-1.aws.neon.tech/blog?sslmode=require
+
+DB_HOST=ep-ancient-forest-a4vpegps-pooler.us-east-1.aws.neon.tech
+DB_PORT=5432
+DB_USER=blog_owner
+DB_PASS=npg_l6JirebKsB7D
+DB_NAME=blog
+JWT_SECRET=supersecret
+JWT_EXPIRES_IN=3600s
+
+
+
+Luego ejecutamos:
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025\blog-backend> npm run start
+
+en appservice cambiamos el mensaje hola mundo
+
+Ahora para que coja cambios paramos con ctrl+c y luego:
+PS Y:\GPS\Prog3\Class-TypeScript-7Mayo2025\blog-backend> npm run start:dev
+
+
+
+
+

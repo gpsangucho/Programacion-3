@@ -1,0 +1,14 @@
+TYPESCRIP
+=======================================================
+- Para frontend y backend
+- equiere compilacion (empaquetar en n .exe para ejecutar). Pasa de TypeScript a JavaScript
+- En el tiempo de Desarrollo depura
+- Detecta errores en la parte de compilacion
+- Escalable
+- Soporta ECMAScript (norma internacional de Java Script
+
+=======================================================
+Instalacion a partir de node.js
+- node.js: ayuda a ejecutar
+- tsc: ayuda a compilar
+

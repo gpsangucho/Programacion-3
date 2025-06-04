@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document Object model - DOM </title>
+    <style>
+        .boton {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+        }
+        .boton-red {
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Eventos Incline </h1>
+    <button class="boton" onclick="alert(Hola)">Click</button>
+    <br>
+    <button class="boton" onclick="mostraAlerta()">Mostrar Alerta</button>
+    <br>
+    <input type="text" oninput="console.log(this.value)">
+    <br>
+    <button class="boton" onclick="agregarProducto()">Agregar Producto</button>
+    <br>
+    <br>
+    <ul id="ListaProductos1"></ul>
+    <h1>Eventos pos addEventListener </h1>
+    <button id="boton" class boton>Haz click </button>
+    <br>
+    <input id="campo" type="text" placehoder="Escribe algo..." />
+    <br>
+    <button id="btnAgregar" class="boton">Agregar producto</button>
+    <ul id="listaProducto2"></ul>
+
+    <script src="dom08-eventos.js"></script>
+
+</body>
+</html>

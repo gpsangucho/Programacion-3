@@ -1,0 +1,11 @@
+
+Java Script es interpretado: se ejecuta directamente sin ejecusiòn
+Tipado fuerte
+Tipado debil
+-----------------
+
+Para usar node: instalar node.js
+
+node --version 
+PS Y:\GPS\PROG> cd .\modulo-2\unidad-1\
+PS Y:\GPS\PROG\modulo-2\unidad-1> node .\js001-hello-worl.js

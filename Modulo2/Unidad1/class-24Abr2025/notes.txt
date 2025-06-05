@@ -1,0 +1,7 @@
+Como ejecutar el .js desde consola: instarlar node.js y ejecutaruna consola. Luego ubicarnios en el directorio del archivo
+
+PS Y:\GPS\Prog3\Modulo-23Abril2025> dir .\MODULO2_UNIDAD_1
+PS Y:\GPS\Prog3\Modulo-23Abril2025\MODULO2_UNIDAD_1> cd .\OBJETOS-24Abr2025
+
+PS Y:\GPS\Prog3\Modulo-23Abril2025\MODULO2_UNIDAD_1\OBJETOS-24Abr2025> node obj01_crear.js
+

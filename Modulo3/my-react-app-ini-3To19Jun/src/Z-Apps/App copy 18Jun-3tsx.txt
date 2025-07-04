@@ -1,0 +1,24 @@
+import './App.css'
+import { AlertTail } from './Tailwind/AlertTail';
+import { ButtonTailwind } from './Tailwind/ButtonTailwind';
+import { CardTailwind } from './Tailwind/CardTailwind';
+import { InputTailwind } from './Tailwind/InputTailwind';
+import { TableTail } from './Tailwind/TableTail';
+
+export default function App() {
+  return (
+    <>
+
+    <ButtonTailwind/>
+    <InputTailwind/> 
+    <CardTailwind/>  
+    <AlertTail/>
+    <TableTail/>   
+
+    </>
+    
+  );
+
+}
+
+

@@ -1,0 +1,40 @@
+import './App.css'
+import { BootstrapAlert } from './bootstrap/Alert';
+import { BootstrapButton } from './bootstrap/BootstrapButton';
+import { BootstrapCard } from './bootstrap/BootstrapCard';
+import { BootstrapComponent } from './bootstrap/BootstrapComponent';
+import { BootstrapForm } from './bootstrap/BootstrapForm';
+import { ButtonCss } from './css/ButtonCss';
+import { ButtonEmotion } from './css/ButtonEmotion';
+import { ButtonStyled } from './css/ButtonStyled';
+import ThemedComponent from './css/ThemedComponent';
+import { ThemeProvider } from './css/ThemeProvider';
+
+
+export default function App() {
+  return (
+    <>
+
+      <ButtonCss/>
+      <ButtonStyled/>
+      <ButtonEmotion/>
+
+      <ThemeProvider>  
+          <ThemedComponent/>
+      </ThemeProvider>  
+
+      <BootstrapButton/>
+      <BootstrapAlert/>
+      <BootstrapCard/>
+      <BootstrapForm/>
+      <BootstrapComponent/>
+      
+      
+
+    </>
+    
+  );
+
+}
+
+

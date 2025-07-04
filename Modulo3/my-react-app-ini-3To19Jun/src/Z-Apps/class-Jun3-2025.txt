@@ -1,0 +1,63 @@
+EN LA TERMINAL:
+1. npm create vite@latest my-react-app -- --template react-ts
+
+2. Selecionar : react y ripscript
+
+3. npm install
+
+4.
+PS C:\Users\alumnos> cd .\my-react-app\ 
+PS C:\Users\alumnos\my-react-app> npm install
+
+5. package.jason: tiene los script de arranque
+
+6. arranque de react: npm run dev
+
+7. Revisoin App.tsx
+
+  const [count, setCount] = useState(0)
+  variable count con valor set count.
+  el ju useState es cero
+  
+  8. cambiamos App.tsx con:
+  
+  import './App.css'
+
+function App() {
+  return (
+    <div className="App">
+      <h1>¡Hola React con Vite!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+9. Pag 3
+Ejemplos de componentes basicos. Agregar carpeta componets 
+e incluir esos archivos
+
+Estructura en la carpeta SRC
+
+/src
+├── /components
+│   ├── HelloWorld.tsx
+│   ├── WelcomeUser.tsx
+│   ├── ButtonCounter.tsx
+│   ├── TextInput.tsx
+│   ├── ToggleMessage.tsx
+│   ├── ShowDate.jsx
+│   ├── ColorBox.jsx
+│   ├── ConditionalText.jsx
+│   ├── EmojiList.jsx
+│   └── SimpleForm.jsx
+├── App.jsx
+
+Se va creando la estructura con .tsx
+
+ Los profesis: PROPS
+  son los parametros que se enviaran a los componentes
+  Se envìa, el nombre del parametro y el valor
+------------------------
+Resumen: Se crea la carpeta de componentes con sus archivos y la carpeta de props con 1 archivo (gretting)
+

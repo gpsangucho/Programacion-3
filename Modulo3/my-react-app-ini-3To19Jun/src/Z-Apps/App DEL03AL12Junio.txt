@@ -1,0 +1,248 @@
+import './App.css'
+import ButtonCounter from './components/ButtonCounter';
+import ColorBox from './components/ColorBox';
+import ConditionalText from './components/ConditionalText';
+import EmojiList from './components/EmojiList';
+import HelloWorld from './components/HelloWorld';
+import ShowDate from './components/ShowDate';
+import SimpleForm from './components/SimpleForm';
+import SimplesForm from './components/SimplesForm';
+import TableName from './components/TableName';
+import TextInput from './components/TextInput';
+import ToggleMessage from './components/ToggleMessage';
+import WelcomeUser from './components/WelcomeUser';
+import Gretting from './props/Gretting';
+import ParentButtonOne from './props/ParentButtonOne';
+import ParentIncrementButton from './props/ParentIncrementButton';
+import ParentInputNotifier from './props/ParentInputNotifier';
+import ParentLoginForm from './props/ParentLoginForm';
+import ParentUserList from './props/ParentUserList';
+import UserCard from './props/UserCard';
+import Contador from './useCallback/Contador';
+import ListaCallback from './useCallback/ListaCallback';
+import PadreCallBack from './useCallback/PadreCallBack';
+import SaludoCallback from './useCallback/SaludoCallback';
+import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
+import GraficoDiferido from './useDeferredValue/GraficoDiferido';
+import ListaOrdenada from './useDeferredValue/ListaOrdenada';
+import TablaDiferida from './useDeferredValue/TablaDiferida';
+import ValidacionEmail from './useDeferredValue/ValidacionEmail';
+import Clock from './useEffect/Clock';
+import DynamicTitle from './useEffect/DynamicTitle';
+import FetchUser from './useEffect/FetchUser';
+import LogEffect from './useEffect/LogEffect';
+import PersistCounter from './useEffect/PersistCounter';
+import SafeFetch from './useEffect/SafeFetch';
+import ScrollLogger from './useEffect/ScrollLogger';
+import CampoTexto from './useId/CampoTexto';
+import LoginCampos from './useId/LoginCampos';
+import { ControladorPanel } from './useImperativeHandle/ControladorPanel';
+import { FormularioConRef } from './useImperativeHandle/FormularioConRef';
+import { PadreConInput } from './useImperativeHandle/PadresConInput';
+import { PaginaScroll } from './useImperativeHandle/PaginaScroll';
+import { PanelContadorConRef } from './useImperativeHandle/PanelContadorConRef';
+import ContadorLetras from './useMemo/ContadorLetras';
+import ExpensiveCalc from './useMemo/ExpensiveCalc';
+import FiltroLista from './useMemo/FiltroLista';
+import PrimosMemo from './useMemo/PrimosMemo';
+import TablaOrdenada from './useMemo/Tabla ordenada';
+import CarritoReducer from './useReducer/CarritoReducer';
+import ContadorReducer from './useReducer/ContadorReducer';
+import FormSteps from './useReducer/FormStep';
+import FormularioReducer from './useReducer/FormularioReducer';
+import ListaReducer from './useReducer/ListaReducer';
+import CirculoColorido from './useRef/CirculoColorido';
+import FocoAutomatico from './useRef/FocoAutomatico';
+import MoverCaja from './useRef/MoverCaja';
+import ReproductorSonido from './useRef/ReproductorSonido';
+import ScrollDemo from './useRef/ScrollDemo';
+import AccessWithLimit from './useStates/AccessWithLimit';
+import AutoCounter from './useStates/AutoCounter';
+import CheckboxSummary from './useStates/CheckboxSummary';
+import DocumentTitleChanger from './useStates/DocumentTitleChanger';
+import DynamicColor from './useStates/DynamicColor';
+import HoverFont from './useStates/HoverFont';
+import LanguageSwitcher from './useStates/LanguageSwitcher';
+import MultiSwitch from './useStates/MultiSwitch';
+import PostLikes from './useStates/PostLikes';
+import { BuscadorUseTransition } from './useTransition/BuscadorUseTrasition';
+import { GaleriaDiferida } from './useTransition/GaleriaDiferida';
+import { ListaTransicion } from './useTransition/ListaTransicion';
+
+
+function App() {
+  const elementos = ["uno", "dos", "tres", "cuatro"];
+  const userData = { name: "Carlos", age: 30};
+  return (
+    <>
+    <h3>/*****************USE COMPONENT 3 JUNIO 2025********************/</h3>
+      <HelloWorld />
+      <p>/*************************************/</p>
+      <WelcomeUser/>
+      <p>/*************************************/</p>
+      <ButtonCounter/>
+      <p>/*************************************/</p>
+      <TextInput/>
+      <p>/*************************************/</p>
+      <ToggleMessage/>
+      <p>/*************************************/</p>
+      <ShowDate/>
+      <p>/*************************************/</p>
+      <ColorBox/>
+      <p>/*************************************/</p>
+      <ConditionalText/>
+      <p>/*************************************/</p>
+      <EmojiList/>
+      <p>/*************************************/</p>
+      <TableName/>
+      <p>/*************************************/</p>
+      <SimpleForm/>
+      <p>/*************************************/</p>
+      <SimplesForm/>
+      <p>/****************USE PROPS*******************/</p>
+      <Gretting name = "Alambra" lastname = "Karolo"/>
+    
+    <h3>/*****************USE PROPS 4 JUNIO 2025********************/</h3>
+      
+      <p>/*************************************/</p>
+      <UserCard user={userData}/>
+      <p>/*************************************/</p>
+      <ParentButtonOne/>
+      <p>/*************************************/</p>
+      <ParentIncrementButton/>
+      <p>/*************************************/</p>
+      <ParentInputNotifier/>
+      <p>/*************************************/</p>
+      <ParentUserList/>
+      <p>/*************************************/</p>
+      <ParentLoginForm/>
+      <h3>/*****************USE STATE 4 JUNIO 2025********************/</h3>
+      <HoverFont/>
+       <p>/*************************************/</p>
+      <AccessWithLimit/>
+       <p>/*************************************/</p>
+      <DocumentTitleChanger/>
+       <p>/*****************LIKES*******************/</p>
+      <PostLikes/>
+       <p>/*************************************/</p>
+      <CheckboxSummary/>
+       <p>/*************************************/</p>
+      <LanguageSwitcher/>
+      <p>/*************************************/</p>
+      <MultiSwitch/>
+      <p>/*************************************/</p>
+      <AutoCounter/>
+      <p>/*************************************/</p>
+      <DynamicColor/>
+      <p>/*************************************/</p>
+      <h3>==============USE EFFECT 5 JUNIO 2025=======================</h3>
+      <LogEffect/>
+      <p>/*************************************/</p>
+      <FetchUser/>
+      <p>/*************************************/</p>
+      <Clock/>
+      <p>/*************************************/</p>
+      <ScrollLogger/>
+      <p>/*************************************/</p>
+      <DynamicTitle/>
+      <p>/*************************************/</p>
+      <SafeFetch/>
+      <p>/*************************************/</p>
+      <PersistCounter/>
+
+    <p>/*****************USE REF 10 JUNIO 2025********************/</p>
+      <h3> *********** Foco Automático *********** </h3>
+      <FocoAutomatico/>
+      <h3> *********** Circulo colorido *********** </h3>
+      <CirculoColorido/>
+      <h3> *********** ScrollDemo *********** </h3>
+      <ScrollDemo/>
+      <h3> *********** Reproductor Sonido *********** </h3>
+      <ReproductorSonido/>
+      <h3> *********** Mover Caja *********** </h3>
+      <MoverCaja/>
+    <p>/*****************USE CALL BACK 11 JUNIO 2025********************/</p>
+      <p>/*************************************/</p>
+      <Contador/>
+      <p>/*************************************/</p>
+      <PadreCallBack/>
+      <p>/*************************************/</p>
+      <SaludoCallback/>
+      <p>/*************************************/</p>
+      <h2>Ejemplo de Lista</h2>
+      <p>/*************************************/</p>
+      <ListaCallback items={elementos} />
+      
+
+      <h1> ********Formulario USE REDUCER********** </h1>
+      <h1> Contador </h1>
+      <ContadorReducer/>
+      <h1> Formulario</h1>
+      <FormularioReducer/>
+      <h1> Lista </h1>
+      <ListaReducer/>
+      <h1> Carrito de compras </h1>
+      <CarritoReducer/>
+      <h1> Form Step </h1>
+      <FormSteps/>
+      
+      <h1> ***************USE MEMO*********************** </h1>
+      <h2> Expansive</h2>
+      <ExpensiveCalc/>
+      <h2> Filtro Lista: sirve para buscar cat, user, etc </h2>
+      <FiltroLista/>
+      <h1>Ordenar tabla de dato</h1>
+      <TablaOrdenada/>
+      <h1>Numeros primos</h1>
+      <PrimosMemo/>
+      <h1> Contador de letras repetidas </h1>
+      <ContadorLetras/>
+      <h1>fin junio 10</h1>
+
+    <p>/*****************USE TRANSITION 12 JUNIO 2025********************/</p>
+      <CampoTexto/>
+      <p>/*************************************/</p>
+      <br/>
+      <LoginCampos/>
+      <p>/*************************************/</p>
+      <br/>
+      <BuscadorUseTransition/>
+      <p>/*************************************/</p>
+      <br/>
+      <GaleriaDiferida/>
+      <p>/*************************************/</p>
+      <br/>
+      <ListaTransicion/>
+      <p>/*************************************/</p>
+      <br/>
+      <BusquedaDiferida/>
+    <p>/*****************IMPERATIVE HANDLE 12 junio 2025 ********************/</p>
+    <p>/*************************************/</p>
+    <BusquedaDiferida/>
+    <p>/*************************************/</p>
+    <TablaDiferida/>
+     <p>/*************************************/</p>
+    <ListaOrdenada/>
+     <p>/*************************************/</p>
+    <GraficoDiferido/>
+     <p>/*************************************/</p>
+    <ValidacionEmail/>
+
+    <br/>
+    <PadreConInput/>
+     <p>/*************************************/</p>
+    <ControladorPanel/>
+     <p>/*************************************/</p>
+    <FormularioConRef/>
+     <p>/*************************************/</p>
+    <PaginaScroll/>
+     <p>/*************************************/</p>
+    <PanelContadorConRef/>
+
+    </>
+    
+  );
+
+}
+export default App;
+

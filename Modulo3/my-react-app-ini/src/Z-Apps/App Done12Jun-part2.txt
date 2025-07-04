@@ -1,0 +1,45 @@
+import './App.css'
+import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
+import GraficoDiferido from './useDeferredValue/GraficoDiferido';
+import ListaOrdenada from './useDeferredValue/ListaOrdenada';
+import TablaDiferida from './useDeferredValue/TablaDiferida';
+import ValidacionEmail from './useDeferredValue/ValidacionEmail';
+import { ControladorPanel } from './useImperativeHandle/ControladorPanel';
+import { FormularioConRef } from './useImperativeHandle/FormularioConRef';
+import { PadreConInput } from './useImperativeHandle/PadresConInput';
+import { PaginaScroll } from './useImperativeHandle/PaginaScroll';
+import { PanelContadorConRef } from './useImperativeHandle/PanelContadorConRef';
+
+
+function App() {
+  return (
+    <>
+
+    <BusquedaDiferida/>
+    <p>/*************************************/</p>
+    <TablaDiferida/>
+     <p>/*************************************/</p>
+    <ListaOrdenada/>
+     <p>/*************************************/</p>
+    <GraficoDiferido/>
+     <p>/*************************************/</p>
+    <ValidacionEmail/>
+
+<br/>
+    <PadreConInput/>
+     <p>/*************************************/</p>
+    <ControladorPanel/>
+     <p>/*************************************/</p>
+    <FormularioConRef/>
+     <p>/*************************************/</p>
+    <PaginaScroll/>
+     <p>/*************************************/</p>
+    <PanelContadorConRef/>
+
+    </>
+    
+  );
+
+}
+export default App;
+

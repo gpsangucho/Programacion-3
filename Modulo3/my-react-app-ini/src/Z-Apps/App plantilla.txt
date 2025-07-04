@@ -1,0 +1,17 @@
+import './App.css'
+import HelloWorld from './components/HelloWorld';
+
+function App() {
+
+  return (
+    <>
+    <h3>/*****************MUESTRA*******************/</h3>
+      <HelloWorld />
+      
+    </>
+    
+  );
+
+}
+export default App;
+

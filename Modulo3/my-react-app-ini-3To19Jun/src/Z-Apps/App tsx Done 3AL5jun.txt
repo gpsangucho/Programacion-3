@@ -1,0 +1,99 @@
+
+App.tsx del 3, 4 y 5 de Junio 2025
+
+import './App.css'
+import ButtonCounter from './components/ButtonCounter';
+import ColorBox from './components/ColorBox';
+import ConditionalText from './components/ConditionalText';
+import EmojiList from './components/EmojiList';
+import HelloWorld from "./components/HelloWorld";
+import ShowDate from './components/ShowDate';
+import SimpleForm from './components/SimpleForm';
+import SimplesForm from './components/SimplesForm';
+import TableName from './components/TableName';
+import TextInput from './components/TextInput';
+import ToggleMessage from './components/ToggleMessage';
+import WelcomeUser from "./components/WelcomeUser";
+import Gretting from './props/Gretting';
+import ParentButtonOne from './props/ParentButtonOne';
+import ParentIncrementButton from './props/ParentIncrementButton';
+import ParentInputNotifier from './props/ParentInputNotifier';
+import ParentLoginForm from './props/ParentLoginForm';
+import ParentUserList from './props/ParentUserList';
+import UserCard from './props/UserCard';
+import Clock from './useEffect/Clock';
+import DynamicTitle from './useEffect/DynamicTitle';
+import FetchUser from './useEffect/FetchUser';
+import LogEffect from './useEffect/LogEffect';
+import PersistCounter from './useEffect/PersistCounter';
+import SafeFetch from './useEffect/SafeFetch';
+import ScrollLogger from './useEffect/ScrollLogger';
+import AccessWithLimit from './useStates/AccessWithLimit';
+import AutoCounter from './useStates/AutoCounter';
+import CheckboxSummary from './useStates/CheckboxSummary';
+import DocumentTitleChanger from './useStates/DocumentTitleChanger';
+import DynamicColor from './useStates/DynamicColor';
+import HoverFont from './useStates/HoverFont';
+import LanguageSwitcher from './useStates/LanguageSwitcher';
+import MultiSwitch from './useStates/MultiSwitch';
+import PostLikes from './useStates/PostLikes';
+
+function App() {
+  const userData = { name: "Carlos", age: 30};
+  return (
+    <>
+      <HelloWorld />
+      <WelcomeUser/>
+      <ButtonCounter/>
+      <br/>
+      <TextInput/>
+      <ToggleMessage/>
+      <ShowDate/>
+      <ColorBox/>
+      <ConditionalText/>
+      <EmojiList/>
+      <TableName/>
+      <SimpleForm/>
+      <SimplesForm/>
+
+
+      <Gretting name = "Alambra" lastname = "Karolo"/>
+      <br/>------------------------------------4 DE JUNIO 2025
+      <br/>---------------------------------------------------------------------
+      <UserCard user={userData}/>
+      <ParentButtonOne/>
+      <ParentIncrementButton/>
+      <br/>---------------------------------------------------------------------
+      <br/>
+      <ParentInputNotifier/>
+      <ParentUserList/>
+      <ParentLoginForm/>
+      
+      <HoverFont/>
+      <br/>---------------------------------------------------------------------
+      <AccessWithLimit/>
+      <br/>---------------------------------------------------------------------
+      <DocumentTitleChanger/>
+      <br/>---------------------------------------------------------------------
+      <PostLikes/>
+      <br/>---------------------------------------------------------------------
+      <CheckboxSummary/>
+      <br/>---------------------------------------------------------------------
+      <LanguageSwitcher/>
+      <MultiSwitch/>
+      <AutoCounter/>
+      <DynamicColor/>
+      <br/>=====================================================================
+      <LogEffect/>
+      <FetchUser/>
+      <Clock/>
+      <ScrollLogger/>
+      <DynamicTitle/>
+      <SafeFetch/>
+      <PersistCounter/>
+
+    </>
+  );
+}
+
+export default App;

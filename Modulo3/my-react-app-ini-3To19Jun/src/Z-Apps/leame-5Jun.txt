@@ -1,0 +1,100 @@
+web:
+
+https://francisco-higuera.netlify.app/load-html/tutorial-reactjs-01.html
+
+https://railway.com/
+
+Pagina 7/19
+- useContext
+-> se usa 1 App.tsx por cada ejemplo de useContext
+-> Se copia los demas App.tsx en App tsx.txt 
+
+===============================================================================================================
+- App.tsx de Login 
+
+import './App.css'
+import React, { useState } from 'react';
+import { LoginContext } from './useContext/LoginContext';
+import LoginStatus from './useContext/LoginStatus';
+
+export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const toggleLogin = () => setIsLoggedIn(prev => !prev);
+
+  return (
+    <LoginContext.Provider value={{ isLoggedIn, toggleLogin }}>
+      <LoginStatus />
+    </LoginContext.Provider>
+  );
+}
+
+===============================================================================================================
+- App.tsx de LanguageSwitcher
+
+import './App.css'
+
+import React, { useState } from 'react';
+import { LanguageContext } from './useContext/LanguageContext';
+import LanguageToggle from './useContext/LanguageToggle';
+
+export default function App() {
+  const [lang, setLang] = useState('es');
+  const toggleLanguage = () => setLang(prev => (prev === 'es' ? 'en' : 'es'));
+
+  return (
+    <LanguageContext.Provider value={{ lang, toggleLanguage }}>
+      <LanguageToggle />
+    </LanguageContext.Provider>
+  );
+}
+===============================================================================================================
+CICD: integracion continua. Sirve para configurar 1 archivo en el GIT que se ejecuta cuando hace merge a esta Pagina
+===============================================================================================================
+Cart context
+
+NO FUNCIONO.
+=======================
+Theme
+
+App.tsx
+import React, { useState } from 'react';
+import { ThemeContext } from './useContext/ThemeContext';
+import { LanguageContext } from './useContext/LanguageContext';
+import Settings from './useContext/Settings';
+
+export default function App() {
+  const [theme, setTheme] = useState('light');
+  const [lang, setLang] = useState('es');
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <LanguageContext.Provider value={lang}>
+        <Settings />
+      </LanguageContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
+=======================
+
+Carpeta USER REF
+
+* App.tsx*
+
+import './App.css'
+import CirculoColorido from './useRef/CirculoColorido';
+import FocoAutomatico from './useRef/FocoAutomatico';
+import ScrollDemo from './useRef/ScrollDemo';
+
+function App() {
+  return (
+    <>
+      <FocoAutomatico/>
+      <CirculoColorido/>
+      <ScrollDemo/>
+    </>
+  );
+
+}
+export default App;
+
+==========================

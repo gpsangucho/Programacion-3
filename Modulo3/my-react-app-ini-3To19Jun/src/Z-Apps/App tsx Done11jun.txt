@@ -1,0 +1,58 @@
+import './App.css'
+import Contador from './useCallback/Contador';
+import ListaCallback from './useCallback/ListaCallback';
+import PadreCallBack from './useCallback/PadreCallBack';
+import SaludoCallback from './useCallback/SaludoCallback';
+import ContadorLetras from './useMemo/ContadorLetras';
+import ExpensiveCalc from './useMemo/ExpensiveCalc';
+import FiltroLista from './useMemo/FiltroLista';
+import PrimosMemo from './useMemo/PrimosMemo';
+import TablaOrdenada from './useMemo/Tabla ordenada';
+import CarritoReducer from './useReducer/CarritoReducer';
+import ContadorReducer from './useReducer/ContadorReducer';
+import FormSteps from './useReducer/FormStep';
+import FormularioReducer from './useReducer/FormularioReducer';
+import ListaReducer from './useReducer/ListaReducer';
+
+function App() {
+   const elementos = ["uno", "dos", "tres", "cuatro"];
+  return (
+    <>
+      <Contador/>
+      <PadreCallBack/>
+      <SaludoCallback/>
+      <h2>Ejemplo de Lista</h2>
+      <ListaCallback items={elementos} />
+      <ContadorReducer/>
+
+      <h1> Formulario </h1>
+      <FormularioReducer/>
+      <h1> Lista </h1>
+      <ListaReducer/>
+      <h1> Carrito de compras </h1>
+      <CarritoReducer/>
+      <h1> Carrito de compras </h1>
+      
+      <h1> USE MEMO </h1>
+      <h2> Expansive</h2>
+      <ExpensiveCalc/>
+      <h2> Filtro Lista: sirve para buscar cat, user, etc </h2>
+      <FiltroLista/>
+      <h1>Ordenar tabla de dato</h1>
+      <TablaOrdenada/>
+      <h1>Numeros primos</h1>
+      <PrimosMemo/>
+      <h1> Contador de letras repetidas </h1>
+      <ContadorLetras/>
+      <h1>fin junio 10</h1>
+
+
+
+    </>
+  );
+
+}
+export default App;
+
+//65.38.96.125
+//QxB0IhgR

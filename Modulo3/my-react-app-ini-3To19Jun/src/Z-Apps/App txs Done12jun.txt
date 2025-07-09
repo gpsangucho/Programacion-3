@@ -1,0 +1,27 @@
+import './App.css'
+import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
+import CampoTexto from './useId/CampoTexto';
+import LoginCampos from './useId/LoginCampos';
+import { BuscadorUseTransition } from './useTransition/BuscadorUseTrasition';
+import { GaleriaDiferida } from './useTransition/GaleriaDiferida';
+import { ListaTransicion } from './useTransition/ListaTransicion';
+
+
+function App() {
+  return (
+    <>
+      <CampoTexto/>
+      <br/>
+      <LoginCampos/>
+      <br/>
+      <BuscadorUseTransition/>
+      <GaleriaDiferida/>
+      <br/>
+      <ListaTransicion/>
+      <BusquedaDiferida/>
+    
+    </>
+  );
+
+}
+export default App;
